@@ -1,0 +1,50 @@
+.projects-section {
+    padding: 50px;
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 두 개의 동일한 너비 */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 80%; /* 부모 컨테이너 너비에 맞춤 */
+}
+
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* 한 줄에 한 열 */
+    }
+}
