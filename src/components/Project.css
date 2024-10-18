@@ -7,7 +7,7 @@
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 두 개의 동일한 너비 */
+    grid-template-columns: 1fr;
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -15,13 +15,16 @@
 }
 
 .project-card {
+    display: flex;
+    flex-direction: row;
     background-color: #2d2d2d;
     border-radius: 8px;
     padding: 20px;
     text-align: left;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    width: 80%; /* 부모 컨테이너 너비에 맞춤 */
+    align-items: center;
+    min-height: 300px;
 }
 
 
@@ -30,9 +33,17 @@
 }
 
 .project-image {
-    width: 100%;
+    width: 50%; /* 이미지 너비를 줄임 */
+    max-width: 600px;
+    height: 100%;
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin-right: 20px; /* 텍스트와 이미지 사이 간격 */
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column; /* 텍스트를 수직으로 배치 */
+    align-items: flex-start;
 }
 
 .project-link {
@@ -42,9 +53,13 @@
     text-decoration: none;
     font-weight: bold;
 }
-
 @media (max-width: 768px) {
-    .projects-container {
-        grid-template-columns: 1fr; /* 한 줄에 한 열 */
+    .project-card {
+        flex-direction: column; /* 모바일에서 수직으로 정렬 */
+    }
+    
+    .project-image {
+        width: 100%; /* 모바일에서 전체 너비 사용 */
+        margin-bottom: 15px;
     }
 }
