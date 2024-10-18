@@ -1,0 +1,19 @@
+.footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #aaa;
+}

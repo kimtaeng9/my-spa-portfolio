@@ -1,0 +1,85 @@
+.contact-section {
+    text-align: center;
+    padding: 50px 60px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 5px;
+    background-color: #ff4b4b;
+    margin: 10px auto 0;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin: 10px 0;
+    background: #1c1c1c;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 1rem;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+button::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #ff4b4b;
+    margin: 5px auto 0;
+}
+
+button:hover::after {
+    width: 120px;
+}
+
+.thanks-message {
+    font-size: 3rem; /* Make the text large */
+    text-align: center;
+    color: #ff4b4b; /* Customize color if needed */
+    margin-top: 50px;
+}
+
+.contact-section h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 300px; 
+    height: 5px;
+    background-color: #ff4b4b;
+    margin: 10px auto 0;
+}
