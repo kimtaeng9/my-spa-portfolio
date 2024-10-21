@@ -11,4 +11,12 @@
 #### 이번 프로젝트에서 React를 활용해 스크롤 기반의 단일 페이지 애플리케이션(SPA)을 구현하는 방법을 학습하고 적용했다.
 #### AWS Amplify를 사용해 자동배포를 했다. 배포 자동화 과정을 통해 개발 및 유지보수가 훨씬 원활해졌다. Route 53을 통해 원하는 주소로 설정하여 접근성을 높였다.
 
+
 #### taeny-kim.com
+
+
+## 상세
+#### 프로젝트 소개 부분
+![image](https://github.com/user-attachments/assets/e680104e-9a02-4657-84c7-b230febf6ed2)
+#### 메일 전송 기능 제공하는 부분
+![image](https://github.com/user-attachments/assets/76dd151e-ecea-4f35-8d50-018f040760a0)
